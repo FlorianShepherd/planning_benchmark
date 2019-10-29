@@ -13,12 +13,14 @@ The script has several command line options:
  * model (str) - The PowerModels.jl power model e.g. "DCPPowerModel"
  * solver (str) - The solver to use, e.g. "juniper", "gurobi"
  * grid (str) - optional if you only want to calculate one grid, e.g. "rts"
- * lc (str) - the loadcases to calculte. Either "ts" or "scaled"
+ * lc (str) - the loadcases to calculate. Either "ts" or "scaled"
  * kind (str) - the optimizations to run, e.g. "tnep,ots,repl". Can only be a part of these like "tnep,repl"
 
 Example to run the model "DCPPowerModel" with "gurobi" as a solver for the grid "brigande" with the time series loadcases "ts" for the REPl "repl" problem:
 
-"python-jl run_powermodels.py --model="DCPPowerModel" --solver="gurobi" --grid="brigande" --lc="ts" --kind="repl"
+```
+python-jl run_powermodels.py --model="DCPPowerModel" --solver="gurobi" --grid="brigande" --lc="ts" --kind="repl"
+```
 
 # Installation instructions
 You need the following software to run the script:
