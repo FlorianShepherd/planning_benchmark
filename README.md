@@ -31,4 +31,4 @@ You need the following software to run the script:
 * pandas
 
 Also the python-julia interface might require some additional installations. See the following link for details:
-https://pandapower.readthedocs.io/en/v2.1.0/opf/powermodels.html
+https://pandapower.readthedocs.io/en/latest/opf/powermodels.html
