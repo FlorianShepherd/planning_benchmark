@@ -338,8 +338,8 @@ def get_command_line_args(argv):
     kind = "tnep,repl,ots"
     lc = "scaled"
     try:
-        opts, args = getopt.getopt(argv, ":m:s:g:l:k:",
-                                   ["model=", "solver=", "grid=", "lc=", "kind="])
+        opts, args = getopt.getopt(argv, ":m:s:g:k:",
+                                   ["model=", "solver=", "grid=", "kind="])
     except getopt.GetoptError:
         raise getopt.GetoptError("error reading input")
     for opt, arg in opts:
@@ -349,8 +349,6 @@ def get_command_line_args(argv):
             pm_solver = arg
         if opt in ("-g", "--grid"):
             grid_name = arg
-        if opt in ("-l", "--lc"):
-            lc = arg
         if opt in ("-k", "--kind"):
             kind = arg
     if pm_solver is None:
