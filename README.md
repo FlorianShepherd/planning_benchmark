@@ -1,5 +1,5 @@
-# A Combined Optimization Strategy of Meta-Heuristic and Mathematical Programming Methods for Meshed Power Systems
-Grid Planning Benchmark Dataset for the Paper "A Combined Optimization Strategy of Meta-Heuristic and Mathematical Programming Methods for Meshed Power Systems"
+# A Hybrid Optimization Strategy of Meta-Heuristic and Mathematical Programming Methods for Meshed Power Systems
+Grid Planning Benchmark Dataset for the Paper "A Hybrid Optimization Strategy of Meta-Heuristic and Mathematical Programming Methods for Meshed Power Systems"
 
 # Data
 This repository contains a subfolder with the following data:
