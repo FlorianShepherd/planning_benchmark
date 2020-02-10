@@ -291,6 +291,7 @@ def test_power_models(loadcases_path, net_path, grid, pm_model="DCPPowerModel", 
                 ots = copy.deepcopy(ots_c)
 
             df.to_excel(res_file)
+    print(f"Optimization finished. Results are stored to {res_file}")
     return df
 
 
@@ -316,7 +317,7 @@ def start_power_models(pm_model, pm_solver, grid_name=None, kind="tnep,repl", lc
     for grid in grids:
         net_path = os.path.join(start_path, grid + ".json")
         loadcases_path = os.path.join(start_path, grid)
-        print(f"Calculating '{lc}' benchmark for '{grid}' with optimizations '{kind}'")
+        print(f"Calculating optimization results for '{grid}' with optimizations '{kind}'")
         print(f"Model: '{pm_model}', Solver: '{pm_solver}'")
         df = test_power_models(loadcases_path, net_path, grid, pm_model, pm_solver, kind=kind, lc=lc)
 
